@@ -39,12 +39,6 @@ jspm_packages
 # Bower dependency directory (https://bower.io/)
 bower_components
 
-# node-waf configuration
-.lock-wscript
-
-# Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
-
 # Ignore test node_modules
 !projects/project1/node_modules
 
@@ -61,15 +55,13 @@ typings/
 .rpt2_cache
 
 # Compiled source
-dist
+/projects/**/dist
+#dist
 dist-base
 dist-tsc-alias
 temp
 # Optional eslint cache
 .eslintcache
-
-# Optional REPL history
-.node_repl_history
 
 # Output of 'npm pack'
 *.tgz
